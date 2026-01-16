@@ -1,11 +1,306 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My First Static Site</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Naco Hats | Custom Hat Manufacturer (OEM/ODM) – Bulk Wholesale Caps</title>
+  <meta name="description" content="Naco Hats is an OEM/ODM custom hat manufacturer for bulk wholesale caps: baseball caps, trucker hats, snapbacks, beanies & bucket hats. Low MOQ, fast sampling, global shipping. Get a free quote." />
+  <link rel="canonical" href="https://nacohats.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Naco Hats | Custom Hat Manufacturer (OEM/ODM) – Bulk Wholesale Caps" />
+  <meta property="og:description" content="Bulk custom hats & caps with your logo. Low MOQ, fast sampling, reliable production. Get a free quote." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nacohats.com/" />
+  <meta property="og:site_name" content="Naco Hats" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Basic SEO -->
+  <meta name="robots" content="index,follow" />
+
+  <style>
+    :root{
+      --bg:#0b1020;
+      --panel:#111a33;
+      --text:#eaf0ff;
+      --muted:#b8c3e6;
+      --brand:#6aa6ff;
+      --brand2:#7cf0c8;
+      --line:rgba(255,255,255,.12);
+      --shadow: 0 14px 40px rgba(0,0,0,.35);
+      --radius:18px;
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color:var(--text);
+      background:
+        radial-gradient(900px 500px at 20% 0%, rgba(106,166,255,.25), transparent 60%),
+        radial-gradient(900px 500px at 90% 10%, rgba(124,240,200,.18), transparent 60%),
+        linear-gradient(180deg, #070a14 0%, var(--bg) 50%, #070a14 100%);
+      line-height:1.55;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+    .nav{
+      position:sticky; top:0; z-index:9;
+      backdrop-filter:saturate(140%) blur(12px);
+      background:rgba(7,10,20,.55);
+      border-bottom:1px solid var(--line);
+    }
+    .navin{display:flex; align-items:center; justify-content:space-between; gap:14px; padding:14px 0;}
+    .brand{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.3px}
+    .logo{
+      width:34px; height:34px; border-radius:10px;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      box-shadow: var(--shadow);
+    }
+    .menu{display:flex; gap:14px; align-items:center; flex-wrap:wrap}
+    .menu a{color:var(--muted); font-weight:600; font-size:14px}
+    .menu a:hover{color:var(--text)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:11px 14px; border-radius:12px;
+      border:1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.06);
+      color:var(--text); font-weight:800; font-size:14px;
+    }
+    .btn.primary{
+      border:none;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      color:#06101a;
+    }
+    .hero{padding:62px 0 34px}
+    .grid{display:grid; gap:18px}
+    .heroGrid{grid-template-columns: 1.35fr .65fr}
+    @media (max-width: 920px){.heroGrid{grid-template-columns: 1fr}}
+    h1{margin:0; font-size:44px; line-height:1.08; letter-spacing:-.6px}
+    @media (max-width: 520px){h1{font-size:34px}}
+    .lead{margin:14px 0 18px; color:var(--muted); font-size:17px; max-width:64ch}
+    .pillRow{display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 22px}
+    .pill{
+      padding:8px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.16);
+      background:rgba(255,255,255,.06);
+      color:var(--muted); font-weight:700; font-size:13px;
+    }
+    .panel{
+      background: rgba(17,26,51,.64);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .heroCard{padding:18px}
+    .kpi{display:grid; grid-template-columns: repeat(2,1fr); gap:12px}
+    .kpi div{
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      border-radius: 14px;
+      padding:12px;
+    }
+    .kpi strong{display:block; font-size:20px}
+    .kpi span{color:var(--muted); font-weight:700; font-size:12px}
+    .ctaRow{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}
+    .section{padding:34px 0}
+    .h2{font-size:26px; margin:0 0 12px}
+    .sub{color:var(--muted); margin:0 0 16px; max-width:80ch}
+    .cards{display:grid; gap:14px; grid-template-columns: repeat(3, 1fr)}
+    @media (max-width: 920px){.cards{grid-template-columns: 1fr}}
+    .card{padding:16px}
+    .card h3{margin:0 0 8px; font-size:18px}
+    .card p{margin:0; color:var(--muted)}
+    .cats{display:grid; gap:14px; grid-template-columns: repeat(3, 1fr)}
+    @media (max-width: 920px){.cats{grid-template-columns: 1fr}}
+    .cat{padding:16px}
+    .tag{display:inline-block; margin-top:10px; font-size:12px; font-weight:800; color:#07121b;
+      background: linear-gradient(135deg, rgba(106,166,255,.95), rgba(124,240,200,.95));
+      padding:6px 10px; border-radius: 999px;
+    }
+    .steps{display:grid; gap:12px; grid-template-columns: repeat(4,1fr)}
+    @media (max-width: 920px){.steps{grid-template-columns: 1fr}}
+    .step{padding:14px}
+    .step b{display:block; margin-bottom:6px}
+    .faq{display:grid; gap:10px}
+    details{
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      border-radius: 14px;
+      padding:12px 12px;
+    }
+    summary{cursor:pointer; font-weight:800}
+    details p{margin:10px 0 0; color:var(--muted)}
+    .footer{
+      padding:28px 0 44px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+    }
+    .footerGrid{display:grid; gap:14px; grid-template-columns: 1.2fr .8fr}
+    @media (max-width: 920px){.footerGrid{grid-template-columns:1fr}}
+    .small{font-size:13px}
+    .links a{display:block; padding:6px 0; color:var(--muted)}
+    .links a:hover{color:var(--text)}
+    .note{font-size:12px; opacity:.85}
+    .form{
+      display:grid; gap:10px;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 920px){.form{grid-template-columns:1fr}}
+    input, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.16);
+      background: rgba(0,0,0,.18);
+      color: var(--text);
+      outline:none;
+    }
+    textarea{min-height:110px; grid-column: 1 / -1; resize:vertical}
+    .form .btn{grid-column: 1 / -1}
+    .muted{color:var(--muted)}
+    .topline{color:rgba(255,255,255,.72); font-weight:800; letter-spacing:.6px; text-transform:uppercase; font-size:12px}
+  </style>
+
+  <!-- Organization schema (basic) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Naco Hats",
+    "url":"https://nacohats.com/",
+    "description":"OEM/ODM custom hat manufacturer for bulk wholesale caps.",
+    "sameAs":[]
+  }
+  </script>
 </head>
+
 <body>
-  <h1>Hello 👋</h1>
-  <p>If you can see this page, your static site is working.</p>
-</body>
-</html>
+  <header class="nav">
+    <div class="wrap navin">
+      <a class="brand" href="/">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Naco Hats</span>
+      </a>
+      <nav class="menu" aria-label="Primary">
+        <a href="#products">Products</a>
+        <a href="#process">Process</a>
+        <a href="#why">Why Us</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn" href="#quote">Get Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap grid heroGrid">
+        <div>
+          <div class="topline">OEM / ODM Custom Hats & Caps</div>
+          <h1>Bulk custom hats with your logo — made fast, made right.</h1>
+          <p class="lead">
+            We manufacture <strong>baseball caps, trucker hats, snapbacks, beanies, and bucket hats</strong> for brands, teams, and promotional programs.
+            Low MOQ options, quick sampling, reliable production, and worldwide shipping.
+          </p>
+
+          <div class="pillRow" role="list">
+            <span class="pill" role="listitem">Low MOQ</span>
+            <span class="pill" role="listitem">Fast Sampling</span>
+            <span class="pill" role="listitem">Embroidery & Patches</span>
+            <span class="pill" role="listitem">Private Label</span>
+            <span class="pill" role="listitem">Worldwide Shipping</span>
+          </div>
+
+          <div class="ctaRow">
+            <a class="btn primary" href="#quote">Get a Free Quote</a>
+            <a class="btn" href="#products">View Products</a>
+          </div>
+
+          <p class="note" style="margin-top:10px;">
+            Tip: Send your logo + target quantity + delivery country, and we’ll reply with pricing & timeline.
+          </p>
+        </div>
+
+        <aside class="panel heroCard">
+          <h2 class="h2" style="margin-bottom:8px;">Production snapshot</h2>
+          <p class="sub" style="margin-bottom:12px;">A quick view of what buyers usually ask first.</p>
+          <div class="kpi">
+            <div><strong>7–10 days</strong><span>sample lead time (typical)</span></div>
+            <div><strong>15–30 days</strong><span>bulk production (typical)</span></div>
+            <div><strong>Multi-process</strong><span>embroider / patch / print</span></div>
+            <div><strong>QC + photos</strong><span>before shipping</span></div>
+          </div>
+          <div class="ctaRow" style="margin-top:14px;">
+            <a class="btn primary" href="#quote">Start Inquiry</a>
+            <a class="btn" href="mailto:sales@nacohats.com?subject=Quote%20Request%20-%20Custom%20Hats">Email Us</a>
+          </div>
+          <p class="note" style="margin-top:10px;">
+            Replace email later if you use another business email.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="wrap">
+        <h2 class="h2">Popular products</h2>
+        <p class="sub">Choose a style, then we match fabrics, closures, and decoration to your brand.</p>
+
+        <div class="cats">
+          <div class="panel cat">
+            <h3>Custom Baseball Caps</h3>
+            <p class="muted">Structured/unstructured, 6-panel, curved/flat brim, cotton twill, washed, etc.</p>
+            <span class="tag">Best seller</span>
+          </div>
+          <div class="panel cat">
+            <h3>Custom Trucker Hats</h3>
+            <p class="muted">Foam front, mesh back, snap closure, great for promotions & summer programs.</p>
+            <span class="tag">Fast turnaround</span>
+          </div>
+          <div class="panel cat">
+            <h3>Custom Snapback Hats</h3>
+            <p class="muted">Flat brim, high crown, bold logo embroidery/patches for streetwear brands.</p>
+            <span class="tag">Brand favorite</span>
+          </div>
+          <div class="panel cat">
+            <h3>Custom Beanies</h3>
+            <p class="muted">Rib knit, cuffed, pom, woven label, embroidery — ideal for winter drops.</p>
+            <span class="tag">Seasonal</span>
+          </div>
+          <div class="panel cat">
+            <h3>Custom Bucket Hats</h3>
+            <p class="muted">Cotton, denim, reversible, all-over print — great for lifestyle collections.</p>
+            <span class="tag">Trending</span>
+          </div>
+          <div class="panel cat">
+            <h3>Private Label Options</h3>
+            <p class="muted">Hang tags, inside labels, custom packaging, barcode & carton marking.</p>
+            <span class="tag">OEM/ODM</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="wrap">
+        <h2 class="h2">How ordering works</h2>
+        <p class="sub">A simple, repeatable process for bulk orders.</p>
+        <div class="steps">
+          <div class="panel step">
+            <b>1) Send inquiry</b>
+            <div class="muted small">Style, quantity, logo file, target market, delivery country.</div>
+          </div>
+          <div class="panel step">
+            <b>2) Quote + mockup</b>
+            <div class="muted small">We confirm materials, decoration, and provide a clear timeline.</div>
+          </div>
+          <div class="panel step">
+            <b>3) Sampling</b>
+            <div class="muted small">Pre-production sample for approval (photos + shipping if needed).</div>
+          </div>
+          <div class="panel step">
+            <b>4) Bulk + QC</b>
+            <div class="muted small">Production, inspection, packing photos, then ship by air/sea/express.</div>
