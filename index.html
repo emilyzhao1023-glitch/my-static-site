@@ -57,7 +57,7 @@
       border-bottom:1px solid var(--line);
     }
     .navin{display:flex; align-items:center; justify-content:space-between; gap:14px; padding:14px 0;}
-    .brand{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.3px}
+    .brand{display:flex; align-items:center;}
     .menu{display:flex; gap:14px; align-items:center; flex-wrap:wrap}
     .menu a{color:var(--muted); font-weight:600; font-size:14px}
     .menu a:hover{color:var(--text)}
@@ -161,10 +161,10 @@
     .form .btn{grid-column: 1 / -1}
     .muted{color:var(--muted)}
     .topline{color:rgba(255,255,255,.72); font-weight:800; letter-spacing:.6px; text-transform:uppercase; font-size:12px}
-  .logo-img {
-    height: 80px;
-    width: auto;
-    display: block;
+    .logo-img {
+      height: 56px;   /* ← 这是关键，决定大小 */
+      width: auto;
+      display: block;
     }
   </style>
 
