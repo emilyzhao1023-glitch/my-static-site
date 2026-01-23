@@ -148,7 +148,7 @@
       grid-template-columns: 1fr 1fr;
     }
     @media (max-width: 920px){.form{grid-template-columns:1fr}}
-    input, textarea{
+    input, textarea, select{
       width:100%;
       padding:12px 12px;
       border-radius:12px;
@@ -335,16 +335,28 @@
               <input type="email" name="email" placeholder="you@email.com" required>
             </label>
             <label>
+              <span class="small muted">Hat style*</span>
+              <select name="hat_style" required>
+                <option value="">Select a hat style</option>
+                <option value="Baseball Cap">Baseball Cap</option>
+                <option value="Trucker Hat">Trucker Hat</option>
+                <option value="Snapback">Snapback</option>
+                <option value="Beanie">Beanie</option>
+                <option value="Bucket Hat">Bucket Hat</option>
+                <option value="Other / Not sure">Other / Not sure</option>
+              </select>
+            </label>
+            <label>
               <span class="small muted">Company / Brand</span>
               <input type="text" name="company" placeholder="Company name">
             </label>
             <label>
               <span class="small muted">Estimated quantity</span>
-              <input type="text" name="quantity" placeholder="e.g. 500 pcs">
+              <input type="text" name="quantity" placeholder="e.g. 500 pcs" required>
             </label>
             <label>
               <span class="small muted">Delivery country</span>
-              <input type="text" name="country" placeholder="Destination country">
+              <input type="text" name="country" placeholder="Destination country" required>
             </label>
             <label>
               <span class="small muted">Target timeline</span>
@@ -352,7 +364,7 @@
             </label>
             <label>
               <span class="small muted">Project details</span>
-              <textarea name="message" placeholder="Styles, colors, logo placement, and any must-haves."></textarea>
+              <textarea name="message" placeholder="Styles, colors, logo placement, and any must-haves." required></textarea>
             </label>
             <button class="btn primary" type="submit">Send Inquiry</button>
           </form>
