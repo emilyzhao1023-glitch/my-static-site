@@ -324,9 +324,11 @@
             <li>Confidential – your design &amp; logo are strictly protected</li>
           </ul>
           <form class="form" action="https://billowing-leaf-9db4.emilyzhao1023.workers.dev/api/inquiry" method="POST">           
+            <input type="text" name="website" style="display:none">
+            <input type="hidden" name="form_time" id="form_time">
             <input type="hidden" name="_subject" value="New Quote Request - Naco Hats">
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://nacohats.com/#quote">
+            <input type="hidden" name="_next" value="https://nacohats.com/#quote">          
             <label>
               <span class="small muted">Full name</span>
               <input type="text" name="name" placeholder="Your name" required>
@@ -376,6 +378,9 @@
       </div>
     </section>
   </main>
+<script>
+document.getElementById("form_time").value = Date.now();
+</script>
 </body>
 </html>
 
