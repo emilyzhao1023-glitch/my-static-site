@@ -73,7 +73,15 @@
       background: linear-gradient(135deg, var(--brand), var(--brand2));
       color:#06101a;
     }
-    .hero{padding:62px 0 34px}
+    .hero{
+      padding:62px 0 34px;
+    }
+
+    .hero-bg{
+      background:
+        linear-gradient(90deg, rgba(7,10,20,.78) 0%, rgba(7,10,20,.55) 38%, rgba(7,10,20,.22) 58%, rgba(7,10,20,.88) 100%),
+        url('hero.png') left center / cover no-repeat;
+    }
     .grid{display:grid; gap:18px}
     .heroGrid{grid-template-columns: 1.35fr .65fr}
     @media (max-width: 920px){.heroGrid{grid-template-columns: 1fr}}
@@ -199,7 +207,7 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero hero-bg">
       <div class="wrap grid heroGrid">
         <div>
           <div class="topline">OEM / ODM Custom Hats & Caps</div>
