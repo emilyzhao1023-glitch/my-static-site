@@ -52,12 +52,11 @@
     .cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 
     .topbar{padding:7px 0;color:#dce8f7;background:var(--navy);font-size:.8rem;text-align:center}
-    .nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(11,27,49,.97);border-bottom:1px solid rgba(255,255,255,.12);backdrop-filter:blur(12px)}
     .nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .logo{width:118px;height:auto}
-    .nav-inner>a:first-child{padding:8px 12px;background:var(--navy);border-radius:10px}
-    .nav-links{display:flex;align-items:center;gap:24px;font-size:.9rem;font-weight:750}
-    .nav-links>a:not(.btn):hover{color:var(--orange-dark)}
+    .logo{width:142px;height:auto}
+    .nav-links{display:flex;align-items:center;gap:24px;color:#fff;font-size:.9rem;font-weight:750}
+    .nav-links>a:not(.btn):hover{color:#ffb186}
 
     .hero{position:relative;overflow:hidden;padding:50px 0 60px;background:linear-gradient(135deg,#eef4fa 0%,#fff 54%,#fff3eb 100%)}
     .hero:before{content:"";position:absolute;width:440px;height:440px;right:-190px;top:-250px;border:80px solid rgba(243,107,36,.09);border-radius:50%}
@@ -67,8 +66,8 @@
     .trust-row li{padding:7px 10px;border:1px solid #cfdbe6;border-radius:999px;background:rgba(255,255,255,.72);font-size:.82rem;font-weight:800}
     .micro{margin-top:12px;color:var(--muted);font-size:.82rem}
     .hero-media{position:relative}
-    .hero-media img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
-    .hero-card{position:relative;width:min(88%,540px);margin:-32px 0 0 auto;padding:19px 22px;color:#fff;background:var(--navy);border-radius:15px;box-shadow:var(--shadow)}
+    .hero-media img{width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .hero-card{position:relative;width:100%;margin:14px 0 0;padding:19px 22px;color:#fff;background:var(--navy);border-radius:15px;box-shadow:var(--shadow)}
     .hero-card strong{display:block;margin-bottom:4px;font-size:1.05rem}
     .hero-card span{color:#c9d7e7;font-size:.9rem}
 
@@ -86,7 +85,7 @@
     .card p{color:var(--muted)}
     .solution{background:var(--mist)}
     .solution-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
-    .solution-media img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .solution-media img{width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow)}
     .checklist{display:grid;gap:16px;margin:28px 0;padding:0;list-style:none}
     .checklist li{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start}
     .checklist li:before{content:"✓";display:grid;width:24px;height:24px;place-items:center;color:#fff;background:var(--success);border-radius:50%;font-weight:900;font-size:.78rem}
@@ -102,7 +101,7 @@
 
     .products{background:var(--mist)}
     .product-card{overflow:hidden;padding:0}
-    .product-card img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#fff}
+    .product-card img{width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;object-position:center;padding:14px;background:#fff}
     .product-copy{padding:23px}
     .product-copy p{margin:8px 0 15px;color:var(--muted)}
     .tag{display:inline-block;padding:5px 9px;color:#744019;background:#fff0e7;border-radius:999px;font-size:.75rem;font-weight:900}
@@ -123,7 +122,7 @@
     .step p{margin-top:8px;color:#b9c9da;font-size:.88rem}
 
     .factory-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:center}
-    .factory-grid img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .factory-grid img{width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow)}
     .proof-list{display:grid;gap:14px;margin:24px 0;padding:0;list-style:none}
     .proof-list li{padding:15px 17px;border-left:4px solid var(--orange);background:var(--mist);border-radius:0 10px 10px 0}
 
@@ -174,12 +173,12 @@
       .section{padding:66px 0}
       .topbar{font-size:.72rem}
       .nav-inner{height:66px}
-      .logo{width:102px}
+      .logo{width:126px}
       .nav-links .btn{min-height:42px;padding:9px 12px;font-size:.82rem}
       .hero{padding:50px 0 56px}
       .hero-grid{gap:32px}
-      .hero-media img{aspect-ratio:16/9}
-      .hero-card{width:94%;margin:-18px auto 0;padding:16px}
+      .hero-media img{aspect-ratio:1/1}
+      .hero-card{width:100%;margin:12px auto 0;padding:16px}
       .proof-grid,.pain-grid,.use-grid,.product-grid,.steps,.form{grid-template-columns:1fr}
       .proof-item,.proof-item:first-child,.proof-item:nth-child(3){border-left:0;border-right:0;border-bottom:1px solid rgba(255,255,255,.13)}
       .mid-cta{align-items:flex-start;flex-direction:column;padding:24px}
@@ -251,7 +250,7 @@
           <p class="micro">For an accurate quote, include quantity, delivery country and required-in-hands date.</p>
         </div>
         <div class="hero-media">
-          <img src="assets/hero-bulk-custom-hats.webp" width="1350" height="900" alt="Blank cap ready for a custom promotional logo" fetchpriority="high">
+          <img src="assets/hero-bulk-custom-hats.webp" width="800" height="800" alt="Custom promotional trucker hats available in multiple bulk colors" fetchpriority="high">
           <div class="hero-card">
             <strong>A program, not just a logo application</strong>
             <span>Style, decoration, color split, QC, packing and delivery are aligned before bulk production.</span>
@@ -288,7 +287,7 @@
 
     <section class="section solution">
       <div class="wrap solution-grid">
-        <div class="solution-media"><img src="assets/factory-production.webp" width="1400" height="473" loading="lazy" alt="Custom hat production, sample room, service team and warehouse"></div>
+        <div class="solution-media"><img src="assets/factory-production.webp" width="1400" height="770" loading="lazy" alt="Hat factory sewing workshop during bulk production"></div>
         <div>
           <p class="eyebrow">The Naco bulk program</p>
           <h2>Lock the details once. Repeat them across the order.</h2>
@@ -335,7 +334,7 @@
           <article class="card product-card"><img src="assets/bulk-foam-trucker-hat.webp" width="900" height="900" loading="lazy" alt="Red foam trucker hats packed for bulk promotional orders"><div class="product-copy"><span class="tag">Cost-focused</span><h3>Bulk foam caps</h3><p>A practical promotional format for campaigns needing strong color, easy sizing and efficient packing.</p></div></article>
           <article class="card product-card"><img src="assets/promotional-sun-visors.webp" width="900" height="900" loading="lazy" alt="Custom logo sun visors in multiple promotional colors"><div class="product-copy"><span class="tag">Golf & summer</span><h3>Promotional visors</h3><p>Lightweight headwear for golf days, hospitality teams, outdoor events and warm-weather campaigns.</p></div></article>
           <article class="card product-card"><img src="assets/bulk-custom-bucket-hats.webp" width="900" height="900" loading="lazy" alt="Bulk custom bucket hats for 1000 piece promotional programs"><div class="product-copy"><span class="tag">1,000+ programs</span><h3>Custom bucket hats</h3><p>Useful for festivals, youth programs and giveaways that benefit from a larger branding surface.</p></div></article>
-          <article class="card product-card"><img src="assets/promotional-hat-range.webp" width="1200" height="500" loading="lazy" alt="Promotional trucker hats, bucket hats, baseball caps and winter hats"><div class="product-copy"><span class="tag">Multi-season</span><h3>Baseball caps & beanies</h3><p>Classic cap structures and cold-weather knit options for year-round branded merchandise plans.</p></div></article>
+          <article class="card product-card"><img src="assets/custom-beanies.webp" width="800" height="800" loading="lazy" alt="Custom pom beanies available in multiple colors"><div class="product-copy"><span class="tag">Cold-weather programs</span><h3>Custom beanies</h3><p>Warm knit headwear for winter campaigns, outdoor teams, seasonal staff and branded gift programs.</p></div></article>
           <article class="card"><span class="num">+</span><h3>Need a different construction?</h3><p>Share a reference photo or existing sample. We can review panel count, crown profile, brim, closure, material and logo method before quoting.</p><div class="cta-row" style="margin-top:22px"><a class="btn btn-secondary" href="#quote">Describe Your Hat</a></div></article>
         </div>
       </div>
@@ -381,7 +380,7 @@
 
     <section class="section">
       <div class="wrap factory-grid">
-        <div><img src="assets/factory-production.webp" width="1400" height="473" loading="lazy" alt="Hat ironing, sample room, customer service and warehouse workflow"></div>
+        <div><img src="assets/qc-check.webp" width="1400" height="682" loading="lazy" alt="Workers checking and finishing hats during bulk production"></div>
         <div>
           <p class="eyebrow">Proof before promises</p>
           <h2>Ask for visibility at the points that matter</h2>
