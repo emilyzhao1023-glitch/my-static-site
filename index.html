@@ -21,6 +21,8 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
 
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
   <!-- Basic SEO -->
   <meta name="robots" content="index,follow" />
 
@@ -166,7 +168,9 @@
       outline:none;
     }
     textarea{min-height:110px; grid-column: 1 / -1; resize:vertical}
-    .form .btn{grid-column: 1 / -1}
+    .form .btn, .turnstile-field{grid-column: 1 / -1}
+    .turnstile-field{min-height:65px; display:flex; align-items:center}
+    .honeypot{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden}
     .muted{color:var(--muted)}
     .topline{color:rgba(255,255,255,.72); font-weight:800; letter-spacing:.6px; text-transform:uppercase; font-size:12px}
     .logo-img {
@@ -338,18 +342,18 @@
             <li>Confidential – your design &amp; logo are strictly protected</li>
           </ul>
           <form class="form" action="https://billowing-leaf-9db4.emilyzhao1023.workers.dev/api/inquiry" method="POST">           
-            <input type="text" name="website" style="display:none">
+            <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
             <input type="hidden" name="form_time" id="form_time">
             <input type="hidden" name="_subject" value="New Quote Request - Naco Hats">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://nacohats.com/#quote">          
             <label>
               <span class="small muted">Full name</span>
-              <input type="text" name="name" placeholder="Your name" required>
+              <input type="text" name="name" placeholder="Your name" maxlength="100" required>
             </label>
             <label>
               <span class="small muted">Email</span>
-              <input type="email" name="email" placeholder="you@email.com" required>
+              <input type="email" name="email" placeholder="you@email.com" maxlength="254" required>
             </label>
             <label>
               <span class="small muted">Hat style*</span>
@@ -365,24 +369,34 @@
             </label>
             <label>
               <span class="small muted">Company / Brand</span>
-              <input type="text" name="company" placeholder="Company name">
+              <input type="text" name="company" placeholder="Company name" maxlength="160">
             </label>
             <label>
               <span class="small muted">Estimated quantity</span>
-              <input type="text" name="quantity" placeholder="e.g. 500 pcs" required>
+              <select name="quantity" required>
+                <option value="">Select quantity range</option>
+                <option value="100-499 pcs">100–499 pcs</option>
+                <option value="500-999 pcs">500–999 pcs</option>
+                <option value="1000-2999 pcs">1,000–2,999 pcs</option>
+                <option value="3000-4999 pcs">3,000–4,999 pcs</option>
+                <option value="5000+ pcs">5,000+ pcs</option>
+              </select>
             </label>
             <label>
               <span class="small muted">Delivery country</span>
-              <input type="text" name="country" placeholder="Destination country" required>
+              <input type="text" name="country" placeholder="Destination country" maxlength="100" required>
             </label>
             <label>
               <span class="small muted">Target timeline</span>
-              <input type="text" name="timeline" placeholder="e.g. 6 weeks">
+              <input type="text" name="timeline" placeholder="e.g. 6 weeks" maxlength="100">
             </label>
             <label>
               <span class="small muted">Project details</span>
-              <textarea name="message" placeholder="Styles, colors, logo placement, and any must-haves." required></textarea>
+              <textarea name="message" placeholder="Styles, colors, logo placement, and any must-haves." maxlength="4000" required></textarea>
             </label>
+            <div class="turnstile-field">
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAAEje-TIpg5UfwXRi" data-theme="dark" data-action="homepage-inquiry" data-refresh-expired="auto"></div>
+            </div>
             <button class="btn primary" type="submit">Send Inquiry</button>
           </form>
           <p class="note" style="margin-top:12px;">
@@ -397,4 +411,3 @@ document.getElementById("form_time").value = Date.now();
 </script>
 </body>
 </html>
-
