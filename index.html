@@ -143,12 +143,22 @@
     summary{cursor:pointer; font-weight:800}
     details p{margin:10px 0 0; color:var(--muted)}
     .footer{
-      padding:28px 0 44px;
+      padding:34px 0 44px;
       border-top:1px solid var(--line);
       color:var(--muted);
     }
-    .footerGrid{display:grid; gap:14px; grid-template-columns: 1.2fr .8fr}
-    @media (max-width: 920px){.footerGrid{grid-template-columns:1fr}}
+    .footerGrid{display:flex; justify-content:space-between; align-items:flex-start; gap:30px}
+    .footerIntro{max-width:620px}
+    .footerIntro strong{color:var(--text)}
+    .footerIntro p,.footerContact p{margin:8px 0 0; font-size:14px; line-height:1.6}
+    .footerContact{flex:0 1 auto; min-width:0}
+    .footerContact a{display:block; padding:2px 0; color:var(--muted); overflow-wrap:anywhere}
+    .footerContact a:hover{color:var(--text)}
+    .footerCopyright{margin-top:8px}
+    @media (max-width: 920px){
+      .footerGrid{flex-direction:column; gap:20px}
+      .footerContact{width:100%}
+    }
     .small{font-size:13px}
     .links a{display:block; padding:6px 0; color:var(--muted)}
     .links a:hover{color:var(--text)}
@@ -408,10 +418,14 @@
   </main>
   <footer class="footer">
     <div class="wrap footerGrid">
-      <div><strong>Naco Hats</strong></div>
-      <div class="links" aria-label="Contact Naco Hats">
+      <div class="footerIntro">
+        <strong>Naco Hats</strong>
+        <p>Custom headwear sourcing and managed bulk production for brands, teams and promotional programs.</p>
+      </div>
+      <div class="footerContact" aria-label="Contact Naco Hats">
         <a href="mailto:sales@nacohats.com">Email: sales@nacohats.com</a>
         <a href="https://wa.me/8617852428868">Phone / WhatsApp: +86 178 5242 8868</a>
+        <p class="footerCopyright">© 2026 Naco Hats</p>
       </div>
     </div>
   </footer>
@@ -433,3 +447,4 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 </body>
 </html>
+
