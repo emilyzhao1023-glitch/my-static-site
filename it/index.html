@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cappellini personalizzati su misura | Produzione OEM | Naco Hats</title>
+  <meta name="description" content="Produzione di cappellini personalizzati su misura per aziende e brand: baseball, trucker, snapback, beanie e bucket hat con ricamo, patch, stampa e private label.">
+  <link rel="canonical" href="https://nacohats.com/it/" />
+  <link rel="alternate" hreflang="en" href="https://nacohats.com/" />
+  <link rel="alternate" hreflang="de-DE" href="https://nacohats.com/de/" />
+  <link rel="alternate" hreflang="it-IT" href="https://nacohats.com/it/" />
+  <link rel="alternate" hreflang="x-default" href="https://nacohats.com/" />
+  <meta name="robots" content="index,follow">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Naco Hats">
+  <meta property="og:title" content="Cappellini personalizzati su misura | Produzione OEM | Naco Hats">
+  <meta property="og:description" content="Produzione di cappellini personalizzati su misura per aziende e brand: baseball, trucker, snapback, beanie e bucket hat con ricamo, patch, stampa e private label.">
+  <meta property="og:url" content="https://nacohats.com/it/">
+  <meta property="og:locale" content="it_IT">
+  <meta name="twitter:card" content="summary_large_image">
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <style>
+    :root{
+      --bg:#0b1020;
+      --panel:#111a33;
+      --text:#eaf0ff;
+      --muted:#b8c3e6;
+      --brand:#6aa6ff;
+      --brand2:#7cf0c8;
+      --line:rgba(255,255,255,.12);
+      --shadow: 0 14px 40px rgba(0,0,0,.35);
+      --radius:18px;
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color:var(--text);
+      background:
+        radial-gradient(900px 500px at 20% 0%, rgba(106,166,255,.25), transparent 60%),
+        radial-gradient(900px 500px at 90% 10%, rgba(124,240,200,.18), transparent 60%),
+        linear-gradient(180deg, #070a14 0%, var(--bg) 50%, #070a14 100%);
+      line-height:1.55;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+    .nav{
+      position:sticky; top:0; z-index:9;
+      backdrop-filter:saturate(140%) blur(12px);
+      background:rgba(7,10,20,.55);
+      border-bottom:1px solid var(--line);
+    }
+    .navin{display:flex; align-items:center; justify-content:space-between; gap:14px; padding:14px 0; height: 80px;}
+    .brand{display:flex; align-items:center;}
+    .menu{display:flex; gap:14px; align-items:center; flex-wrap:wrap}
+    .menu a{color:var(--muted); font-weight:600; font-size:14px}
+    .menu a:hover{color:var(--text)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:11px 14px; border-radius:12px;
+      border:1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.06);
+      color:var(--text); font-weight:800; font-size:14px;
+    }
+    .btn.primary{
+      border:none;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      color:#06101a;
+    }
+    .hero{
+      padding:62px 0 34px;
+    }
+
+    .hero-bg{
+      background:
+        linear-gradient(90deg, rgba(7,10,20,.78) 0%, rgba(7,10,20,.55) 38%, rgba(7,10,20,.22) 58%, rgba(7,10,20,.88) 100%),
+        url('/hero.png') 15% center / 90% no-repeat;
+    }
+    .grid{display:grid; gap:18px}
+    .heroGrid{grid-template-columns: 1.35fr .65fr}
+    @media (max-width: 920px){.heroGrid{grid-template-columns: 1fr}}
+    h1{margin:0; font-size:44px; line-height:1.08; letter-spacing:-.6px}
+    @media (max-width: 520px){h1{font-size:34px}}
+    .lead{margin:14px 0 18px; color:var(--muted); font-size:17px; max-width:64ch}
+    .pillRow{display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 22px}
+    .pill{
+      padding:8px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.16);
+      background:rgba(255,255,255,.06);
+      color:var(--muted); font-weight:700; font-size:13px;
+    }
+    .panel{
+      background: rgba(17,26,51,.64);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .heroCard{padding:18px}
+    .kpi{display:grid; grid-template-columns: repeat(2,1fr); gap:12px}
+    .kpi div{
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      border-radius: 14px;
+      padding:12px;
+    }
+    .kpi strong{display:block; font-size:20px}
+    .kpi span{color:var(--muted); font-weight:700; font-size:12px}
+    .ctaRow{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}
+    .section{padding:34px 0}
+    .h2{font-size:26px; margin:0 0 12px}
+    .sub{color:var(--muted); margin:0 0 16px; max-width:80ch}
+    .cards{display:grid; gap:14px; grid-template-columns: repeat(3, 1fr)}
+    @media (max-width: 920px){.cards{grid-template-columns: 1fr}}
+    .card{padding:16px}
+    .card h3{margin:0 0 8px; font-size:18px}
+    .card p{margin:0; color:var(--muted)}
+    .cats{display:grid; gap:14px; grid-template-columns: repeat(3, 1fr)}
+    @media (max-width: 920px){.cats{grid-template-columns: 1fr}}
+    .cat{padding:16px}
+    .tag{display:inline-block; margin-top:10px; font-size:12px; font-weight:800; color:#07121b;
+      background: linear-gradient(135deg, rgba(106,166,255,.95), rgba(124,240,200,.95));
+      padding:6px 10px; border-radius: 999px;
+    }
+    .steps{display:grid; gap:12px; grid-template-columns: repeat(4,1fr)}
+    @media (max-width: 920px){.steps{grid-template-columns: 1fr}}
+    .step{padding:14px}
+    .step b{display:block; margin-bottom:6px}
+    .faq{display:grid; gap:10px}
+    details{
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      border-radius: 14px;
+      padding:12px 12px;
+    }
+    summary{cursor:pointer; font-weight:800}
+    details p{margin:10px 0 0; color:var(--muted)}
+    .footer{
+      padding:34px 0 44px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+    }
+    .footerGrid{display:flex; justify-content:space-between; align-items:flex-start; gap:30px}
+    .footerIntro{max-width:620px}
+    .footerIntro strong{color:var(--text)}
+    .footerIntro p,.footerContact p{margin:8px 0 0; font-size:14px; line-height:1.6}
+    .footerContact{flex:0 1 auto; min-width:0}
+    .footerContact a{display:block; padding:2px 0; color:var(--muted); overflow-wrap:anywhere}
+    .footerContact a:hover{color:var(--text)}
+    .footerCopyright{margin-top:8px}
+    @media (max-width: 920px){
+      .footerGrid{flex-direction:column; gap:20px}
+      .footerContact{width:100%}
+    }
+    .small{font-size:13px}
+    .links a{display:block; padding:6px 0; color:var(--muted)}
+    .links a:hover{color:var(--text)}
+    .note{font-size:12px; opacity:.85}
+    .form{
+      display:grid; gap:10px;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 920px){.form{grid-template-columns:1fr}}
+    input, textarea, select{
+      width:100%;
+      padding:12px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.16);
+      background: rgba(0,0,0,.18);
+      color: var(--text);
+      outline:none;
+    }
+    textarea{min-height:110px; grid-column: 1 / -1; resize:vertical}
+    .form .btn, .turnstile-field{grid-column: 1 / -1}
+    .turnstile-field{min-height:65px; display:flex; align-items:center}
+    .honeypot{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden}
+    .muted{color:var(--muted)}
+    .topline{color:rgba(255,255,255,.72); font-weight:800; letter-spacing:.6px; text-transform:uppercase; font-size:12px}
+    .logo-img {
+      max-height: 56px;
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+  
+    .section{scroll-margin-top:96px}.lead,h1,h2,h3,label{overflow-wrap:break-word}.heroGrid>*,.form>*,.footerGrid>*{min-width:0}.menu a{font-size:13px}.language{margin-top:8px}.kpi strong{font-size:18px}.kpi>div{min-width:0;overflow-wrap:anywhere}
+    @media(max-width:360px){#quote .panel.card{margin-inline:-18px;padding:8px}}
+</style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://nacohats.com/#organization","name":"Naco Hats","url":"https://nacohats.com/","logo":"https://nacohats.com/logo.png","email":"sales@nacohats.com"}]}</script>
+</head>
+<body>
+  <header class="nav"><div class="wrap navin">
+    <a class="brand" href="/it/"><img src="/logo.png" alt="Naco Hats" class="logo-img"></a>
+    <nav class="menu" aria-label="Navigazione principale"><a href="#modelli">Modelli</a><a href="#logo">Logo e finiture</a><a href="#processo">Come funziona</a><a href="#faq">FAQ</a><a class="btn" href="#quote">Preventivo</a></nav>
+  </div></header>
+  <main>
+    <section class="hero hero-bg"><div class="wrap grid heroGrid">
+      <div><div class="topline">Produzione OEM / ODM di cappellini e headwear</div>
+        <h1>Cappellini personalizzati con logo – produzione su misura per aziende, brand e team</h1>
+        <p class="lead">Baseball, trucker, snapback, beanie e bucket hat realizzati secondo le specifiche del progetto. Ricamo, patch, stampa e private label vengono valutati sul modello scelto, con campione prima della produzione in serie e spedizione internazionale.</p>
+        <div class="pillRow"><span class="pill">Quantità flessibili</span><span class="pill">Campione prima della produzione</span><span class="pill">Ricamo &amp; patch</span><span class="pill">Private label</span><span class="pill">Spedizione internazionale</span></div>
+        <div class="ctaRow"><a class="btn primary" href="#quote">Richiedi un preventivo</a><a class="btn" href="#modelli">Scopri i modelli</a></div>
+        <p class="note">Per iniziare bastano un riferimento, il logo, la quantità desiderata e il Paese di consegna. Valutiamo anche progetti con dettagli ancora da definire.</p>
+      </div>
+      <aside class="panel heroCard"><h2 class="h2">Definire il progetto prima della serie</h2><p class="sub">Produzione e fornitura su specifica per aziende, brand e organizzazioni in Italia e in altri mercati.</p>
+        <div class="kpi"><div><strong>Modello e tessuto</strong><span>Scelte legate all’uso previsto</span></div><div><strong>Campione</strong><span>Da approvare prima della serie</span></div><div><strong>Logo e dettagli</strong><span>Grafica, posizione e finiture</span></div><div><strong>Qualità e imballo</strong><span>Verifiche e confezionamento concordati</span></div></div>
+        <div class="ctaRow"><a class="btn primary" href="#quote">Parlaci del tuo progetto</a><a class="btn" href="mailto:sales@nacohats.com">Scrivi un’e-mail</a></div>
+      </aside>
+    </div></section>
+    <section class="section" id="su-misura"><div class="wrap">
+      <h2 class="h2">Cappellini su misura – non solo un logo su un modello a catalogo</h2>
+      <p class="sub">Applicare un ricamo a un cappellino già pronto e sviluppare un modello su specifica richiedono scelte diverse. Nella produzione su misura il logo è una parte del progetto: conta anche come il copricapo viene costruito, indossato e distribuito.</p>
+      <div class="cards">
+        <div class="panel cat"><h3>Struttura e materiali</h3><p class="muted">A seconda del modello e del progetto si definiscono pannelli, tessuto, colori, forma della visiera e chiusura. Verifichiamo la fattibilità della combinazione prima di quotarla.</p></div>
+        <div class="panel cat"><h3>Identità del brand</h3><p class="muted">Ricamo, patch, stampa, etichette interne e cartellini vengono valutati insieme alla grafica e al materiale. Non ogni tecnica è adatta a ogni modello.</p></div>
+        <div class="panel cat"><h3>Specifiche e campione</h3><p class="muted">Dettagli e confezionamento vengono concordati nel preventivo. Il campione permette di verificare l’esecuzione e registrare le modifiche prima della produzione.</p></div>
+      </div>
+    </div></section>
+    <section class="section" id="modelli"><div class="wrap">
+      <h2 class="h2">Quali cappellini possiamo realizzare su misura?</h2><p class="sub">Il modello di partenza deve rispondere all’impiego previsto. Inviate una foto o una scheda di riferimento per confrontare struttura, materiali e finiture.</p>
+      <div class="cats">
+        <div class="panel cat"><h3>Cappellini da baseball</h3><p class="muted">Modelli con visiera curva o piatta e diverse costruzioni del frontale. Tessuto, vestibilità e posizione del logo si definiscono in base al progetto.</p></div>
+        <div class="panel cat"><h3>Trucker</h3><p class="muted">Frontale in tessuto o schiuma e retro in rete. Per i trucker con logo si coordinano colori di frontale, rete e visiera, tenendo conto dello spazio per la decorazione.</p></div>
+        <div class="panel cat"><h3>Snapback</h3><p class="muted">Cappellini con visiera piatta e chiusura regolabile per collezioni e merchandising. Profilo e finiture vengono verificati sul campione.</p></div>
+        <div class="panel cat"><h3>Beanie / berretti invernali</h3><p class="muted">Berretti in maglia con risvolto, ricamo o etichetta, da valutare per collezioni stagionali e abbigliamento dei team.</p></div>
+        <div class="panel cat"><h3>Bucket hat / cappelli alla pescatora</h3><p class="muted">Modelli in tessuti adatti all’impiego previsto, con eventuale stampa o costruzione reversibile quando disponibile per il progetto.</p></div>
+        <div class="panel cat"><h3>Private label</h3><p class="muted">Etichette interne, cartellini e dettagli di confezionamento possono completare la fornitura con l’identità del vostro brand.</p></div>
+      </div>
+    </div></section>
+    <section class="section" id="logo"><div class="wrap">
+      <h2 class="h2">Cappellini con logo: ricamo, patch e stampa</h2><p class="sub">Per scegliere tra ricamo e altre finiture occorre considerare dimensioni, dettagli della grafica e superficie disponibile. Definiamo la soluzione in base al modello, al materiale e al risultato richiesto.</p>
+      <div class="cards">
+        <div class="panel cat"><h3>Ricamo piatto e 3D</h3><p class="muted">Il ricamo piatto valorizza molti tipi di logo; il ricamo 3D richiede una grafica e un frontale adatti. Colori del filo, copertura e dimensioni si concordano sul campione.</p></div>
+        <div class="panel cat"><h3>Patch e stampa</h3><p class="muted">Patch ricamate o tessute e stampa vengono valutate in base alla grafica e al tessuto. Metodo di applicazione e finitura sono parte della specifica.</p></div>
+        <div class="panel cat"><h3>Posizione ed etichette</h3><p class="muted">Logo frontale, laterale o posteriore, se la costruzione lo consente. Cuciture e rete possono limitare la lavorazione; le etichette private label completano l’interno.</p></div>
+      </div>
+    </div></section>
+    <section class="section" id="applicazioni"><div class="wrap">
+      <h2 class="h2">Cappellini personalizzati per aziende, brand e organizzazioni</h2><p class="sub">Una collezione per un brand, l’abbigliamento di un’associazione e una campagna promozionale hanno esigenze diverse. Destinatari, quantità e modalità di distribuzione aiutano a scegliere il modello.</p>
+      <div class="cards">
+        <div class="panel cat"><h3>Aziende e team</h3><p class="muted">Cappellini aziendali per personale, eventi e iniziative interne, con attenzione a comfort, colori e ripartizione dei pezzi.</p></div>
+        <div class="panel cat"><h3>Brand e merchandising</h3><p class="muted">Collezioni, attività di associazioni e merchandise per eventi con un’identità visiva coerente e dettagli approvati prima della serie.</p></div>
+        <div class="panel cat"><h3>Agenzie e distributori</h3><p class="muted">Forniture di cappellini all’ingrosso per clienti e campagne promozionali. Il brief, le varianti, il confezionamento e la consegna guidano il preventivo.</p></div>
+      </div>
+    </div></section>
+    <section class="section" id="processo"><div class="wrap">
+      <h2 class="h2">Dalla richiesta alla produzione in serie</h2><p class="sub">Un percorso di approvazione chiaro aiuta a ridurre modifiche e incomprensioni durante la produzione.</p>
+      <div class="steps">
+        <div class="panel step"><b>1. Richiesta</b><div class="muted small">Indicare modello, quantità, logo, Paese di consegna e tempistiche desiderate.</div></div>
+        <div class="panel step"><b>2. Preventivo e specifiche</b><div class="muted small">Concordare materiale, colori, finiture, dettagli, confezionamento e tempi previsti.</div></div>
+        <div class="panel step"><b>3. Campione e approvazione</b><div class="muted small">Verificare il campione e, secondo il progetto, le foto. Definire eventuali modifiche prima della conferma della serie.</div></div>
+        <div class="panel step"><b>4. Produzione, controllo qualità e spedizione</b><div class="muted small">Produrre dopo l’approvazione, controllare le caratteristiche concordate, confezionare e organizzare la spedizione.</div></div>
+      </div><p class="note" style="margin-top:16px">Campione: indicativamente circa 7–10 giorni. Produzione in serie: indicativamente circa 15–30 giorni. I tempi dipendono da specifiche, quantità, disponibilità dei materiali e approvazione del campione. Il trasporto è aggiuntivo; le date di consegna vengono confermate per il singolo progetto.</p>
+    </div></section>
+    <section class="section" id="faq"><div class="wrap"><h2 class="h2">Domande sulla produzione e sulla personalizzazione</h2><div class="faq"><details><summary>Quali tipi di cappellini possono essere personalizzati?</summary><p>Possiamo valutare cappellini da baseball, trucker, snapback, beanie e bucket hat. Materiali, struttura, dettagli e finiture vengono definiti in base al modello e all’impiego previsto.</p></details>
+<details><summary>È possibile realizzare un cappellino completamente su misura?</summary><p>È possibile sviluppare il modello secondo le specifiche del progetto, anziché limitarsi a decorare un articolo a catalogo. Struttura, tessuto, colori, visiera, chiusura ed etichette vengono valutati insieme: non tutte le combinazioni sono adatte a ogni modello.</p></details>
+<details><summary>Posso far ricamare il mio logo?</summary><p>Sì. Per i cappellini ricamati verifichiamo la grafica, le dimensioni e la posizione del logo sul materiale scelto. Il ricamo piatto e, quando indicato, il ricamo 3D vengono concordati prima della produzione. Patch e stampa possono essere alternative, a seconda del modello.</p></details>
+<details><summary>Qual è la quantità minima d’ordine?</summary><p>La quantità minima dipende dal modello, dal materiale e dal tipo di personalizzazione. Indicateci la quantità desiderata e valuteremo l’opzione di produzione più adatta al progetto.</p></details>
+<details><summary>Posso ricevere un campione prima della produzione?</summary><p>Sì. Dopo aver concordato specifiche e grafica si può sviluppare un campione di preproduzione. Modalità, costi e tempi vengono confermati per il progetto; eventuali modifiche si definiscono prima dell’approvazione della serie.</p></details>
+<details><summary>Quanto tempo richiedono campione e produzione?</summary><p>Indicativamente, il campione richiede circa 7–10 giorni e la produzione in serie circa 15–30 giorni. I tempi effettivi dipendono da specifiche, quantità, disponibilità dei materiali e approvazione del campione. Il trasporto va considerato a parte: non si tratta di date di consegna garantite.</p></details>
+<details><summary>Spedite anche in Italia?</summary><p>Sì. Possiamo concordare la spedizione in Italia e in altri mercati, scegliendo tra corriere espresso, trasporto aereo o marittimo in base a volume e tempistiche. Costi, modalità e responsabilità vengono definiti prima dell’ordine.</p></details>
+<details><summary>Quali informazioni servono per ricevere un preventivo?</summary><p>Indicate modello o riferimento, quantità totale e ripartizione per colore o variante, materiale, grafica e posizione del logo, finitura, confezionamento, Paese e data di consegna desiderata. Un budget indicativo aiuta a confrontare le opzioni.</p></details></div></div></section>
+    <section class="section" id="quote"><div class="wrap">
+      <h2 class="h2">Richiedi un preventivo per il tuo progetto</h2><p class="sub">Indicate modello, quantità, logo e destinazione. Se le specifiche non sono ancora complete, inviate i riferimenti disponibili: potremo valutare insieme le opzioni.</p>
+      <div class="panel card"><form class="form" action="https://nacohats.com/api/inquiry" method="POST">           
+            <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input type="hidden" name="form_time" id="form_time">
+            <input type="hidden" name="_subject" value="New Quote Request - Naco Hats">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://nacohats.com/it/#quote">          
+            <label>
+              <span class="small muted">Nome</span>
+              <input type="text" name="name" placeholder="Nome e cognome" maxlength="100" required>
+            </label>
+            <label>
+              <span class="small muted">E-mail</span>
+              <input type="email" name="email" placeholder="nome@azienda.it" maxlength="254" required>
+            </label>
+            <label>
+              <span class="small muted">Modello di cappellino*</span>
+              <select name="hat_style" required>
+                <option value="">Selezionare un modello</option>
+                <option value="Baseball Cap">Cappellino da baseball</option>
+                <option value="Trucker Hat">Trucker</option>
+                <option value="Snapback">Snapback</option>
+                <option value="Beanie">Beanie / berretto invernale</option>
+                <option value="Bucket Hat">Bucket hat / cappello alla pescatora</option>
+                <option value="Other / Not sure">Altro / non ancora definito</option>
+              </select>
+            </label>
+            <label>
+              <span class="small muted">Azienda / Brand</span>
+              <input type="text" name="company" placeholder="Nome dell’azienda o del brand" maxlength="160">
+            </label>
+            <label>
+              <span class="small muted">Quantità desiderata</span>
+              <input type="text" name="quantity" placeholder="es. 50 pezzi o 500 pezzi" maxlength="100" required>
+            </label>
+            <label>
+              <span class="small muted">Paese di consegna</span>
+              <input type="text" name="country" placeholder="es. Italia" maxlength="100" required>
+            </label>
+            <label>
+              <span class="small muted">Tempistiche desiderate</span>
+              <input type="text" name="timeline" placeholder="es. tra 6 settimane" maxlength="100">
+            </label>
+            <label>
+              <span class="small muted">Dettagli del progetto</span>
+              <textarea name="message" placeholder="Modello, colori, posizione del logo, ricamo o altre finiture, confezionamento e data di consegna desiderata." maxlength="4000" required></textarea>
+            </label>
+            <div class="turnstile-field">
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAAEje-TIpg5UfwXRi" data-theme="dark" data-action="homepage-inquiry" data-refresh-expired="auto"></div>
+            </div>
+            <button class="btn primary" type="submit">Richiedi un preventivo</button>
+          </form><p class="note" style="margin-top:12px">Dopo la nostra risposta potrete inviare i file del logo e altri riferimenti via e-mail.</p></div>
+    </div></section>
+  </main>
+  <footer class="footer"><div class="wrap footerGrid">
+    <div class="footerIntro"><strong>Naco Hats</strong><p>Copricapi su specifica: sviluppo del modello, campione e produzione in serie per aziende, brand e team.</p></div>
+    <div class="footerContact"><a href="mailto:sales@nacohats.com">E-mail: sales@nacohats.com</a><p>© 2026 Naco Hats</p><p class="language"><a href="/" lang="en" hreflang="en">English</a></p><p class="language"><a href="/de/" lang="de" hreflang="de-DE">Deutsch</a></p></div>
+  </div></footer>
+  <script>document.getElementById("form_time").value = Date.now();</script>
+</body>
+</html>
