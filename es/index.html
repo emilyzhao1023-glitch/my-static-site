@@ -21,7 +21,6 @@
   <meta property="og:url" content="https://nacohats.com/es/">
   <meta property="og:locale" content="es_ES">
   <meta name="twitter:card" content="summary_large_image">
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <style>
     :root{
       --bg:#0b1020;
@@ -174,8 +173,7 @@
       outline:none;
     }
     textarea{min-height:110px; grid-column: 1 / -1; resize:vertical}
-    .form .btn, .turnstile-field{grid-column: 1 / -1}
-    .turnstile-field{min-height:65px; display:flex; align-items:center}
+    .form .btn{grid-column: 1 / -1}
     .honeypot{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden}
     .muted{color:var(--muted)}
     .topline{color:rgba(255,255,255,.72); font-weight:800; letter-spacing:.6px; text-transform:uppercase; font-size:12px}
@@ -268,6 +266,7 @@
       <div class="panel card"><form class="form" action="https://nacohats.com/api/inquiry" method="POST">           
             <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
             <input type="hidden" name="form_time" id="form_time">
+            <input type="hidden" name="form_type" value="homepage-inquiry">
             <input type="hidden" name="_subject" value="New Quote Request - Naco Hats">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://nacohats.com/es/#quote">          
@@ -311,9 +310,6 @@
               <span class="small muted">Detalles del proyecto</span>
               <textarea name="message" placeholder="Modelo, colores, posición del logotipo, acabado, embalaje y fecha de entrega deseada." maxlength="4000" required></textarea>
             </label>
-            <div class="turnstile-field">
-              <div class="cf-turnstile" data-sitekey="0x4AAAAAAEje-TIpg5UfwXRi" data-theme="dark" data-action="homepage-inquiry" data-refresh-expired="auto"></div>
-            </div>
             <button class="btn primary" type="submit">Solicite un presupuesto</button>
           </form><p class="note" style="margin-top:12px">Tras nuestra respuesta podrá enviar los archivos del logotipo y otras referencias por e-mail.</p></div>
     </div></section>

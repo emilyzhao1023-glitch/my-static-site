@@ -17,7 +17,6 @@
   <meta property="og:url" content="https://nacohats.com/custom-trucker-hats-manufacturer/">
   <meta property="og:image" content="https://nacohats.com/custom-trucker-hats-manufacturer/assets/foam-front-colors.webp">
   <meta name="twitter:card" content="summary_large_image">
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <style>
     :root{
       --ink:#11233c; --navy:#0b1b31; --blue:#1559a6; --orange:#f36b24;
@@ -155,7 +154,6 @@
     input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(21,89,166,.12)}
     textarea{min-height:115px;resize:vertical}
     .fineprint{grid-column:1/-1;color:var(--muted);font-size:.76rem;font-weight:500}
-    .turnstile-field{grid-column:1/-1;min-height:65px;display:flex;align-items:center}
     .form button{grid-column:1/-1}
 
     footer{padding:34px 0 88px;color:#aebdcb;background:#071321}
@@ -189,7 +187,7 @@
       .proof-grid,.pain-grid,.use-grid,.product-grid,.steps,.form{grid-template-columns:1fr}
       .proof-item,.proof-item:first-child,.proof-item:nth-child(3){border-left:0;border-right:0;border-bottom:1px solid rgba(255,255,255,.13)}
       .mid-cta{align-items:flex-start;flex-direction:column;padding:24px}
-      .full,.fineprint,.turnstile-field,.form button{grid-column:1}
+      .full,.fineprint,.form button{grid-column:1}
       .footer-grid{flex-direction:column}
       footer{padding-bottom:104px}
     }
@@ -212,7 +210,6 @@
       .steps{grid-template-columns:1fr}
       th,td{padding:12px;font-size:.86rem;overflow-wrap:anywhere}
       .spec-wrap th{width:34%}
-      .turnstile-field{min-width:0}
     }
   </style>
   <script type="application/ld+json">
@@ -505,6 +502,7 @@
           <form class="form" action="https://nacohats.com/api/inquiry" method="POST">
             <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
             <input type="hidden" name="form_time" id="form_time">
+            <input type="hidden" name="form_type" value="bulk-inquiry">
             <input type="hidden" name="source_page" value="custom-trucker-hats-manufacturer">
             <input type="hidden" name="_subject" value="500+ Custom Trucker Hat Project - Naco Hats">
             <input type="hidden" name="_captcha" value="false">
@@ -519,9 +517,6 @@
             <label>WhatsApp / phone<input type="text" name="whatsapp" autocomplete="tel" maxlength="100"></label>
             <label class="full">Project details *<textarea name="message" placeholder="Trucker construction (5/6 panel, foam/fabric), quantity per color/style, front/mesh/visor colors, closure, logo method, artwork/reference link, packaging and target budget." maxlength="4000" required></textarea></label>
             <p class="fineprint">By submitting, you agree that Naco Hats may contact you about this sourcing request. Artwork can be emailed after we reply.</p>
-            <div class="turnstile-field">
-              <div class="cf-turnstile" data-sitekey="0x4AAAAAAEje-TIpg5UfwXRi" data-size="compact" data-theme="light" data-action="bulk-inquiry" data-refresh-expired="auto"></div>
-            </div>
             <button class="btn btn-primary" type="submit">Request a Quote</button>
           </form>
       </div>
