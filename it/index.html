@@ -21,7 +21,6 @@
   <meta property="og:url" content="https://nacohats.com/it/">
   <meta property="og:locale" content="it_IT">
   <meta name="twitter:card" content="summary_large_image">
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <style>
     :root{
       --bg:#0b1020;
@@ -174,8 +173,7 @@
       outline:none;
     }
     textarea{min-height:110px; grid-column: 1 / -1; resize:vertical}
-    .form .btn, .turnstile-field{grid-column: 1 / -1}
-    .turnstile-field{min-height:65px; display:flex; align-items:center}
+    .form .btn{grid-column: 1 / -1}
     .honeypot{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden}
     .muted{color:var(--muted)}
     .topline{color:rgba(255,255,255,.72); font-weight:800; letter-spacing:.6px; text-transform:uppercase; font-size:12px}
@@ -187,7 +185,6 @@
     }
   
     .section{scroll-margin-top:96px}.lead,h1,h2,h3,label{overflow-wrap:break-word}.heroGrid>*,.form>*,.footerGrid>*{min-width:0}.menu a{font-size:13px}.language{margin-top:8px}.kpi strong{font-size:18px}.kpi>div{min-width:0;overflow-wrap:anywhere}
-    @media(max-width:360px){#quote .panel.card{margin-inline:-18px;padding:8px}}
 </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://nacohats.com/#organization","name":"Naco Hats","url":"https://nacohats.com/","logo":"https://nacohats.com/logo.png","email":"sales@nacohats.com"}]}</script>
 </head>
@@ -268,6 +265,7 @@
       <div class="panel card"><form class="form" action="https://nacohats.com/api/inquiry" method="POST">           
             <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
             <input type="hidden" name="form_time" id="form_time">
+            <input type="hidden" name="form_type" value="homepage-inquiry">
             <input type="hidden" name="_subject" value="New Quote Request - Naco Hats">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://nacohats.com/it/#quote">          
@@ -311,9 +309,6 @@
               <span class="small muted">Dettagli del progetto</span>
               <textarea name="message" placeholder="Modello, colori, posizione del logo, ricamo o altre finiture, confezionamento e data di consegna desiderata." maxlength="4000" required></textarea>
             </label>
-            <div class="turnstile-field">
-              <div class="cf-turnstile" data-sitekey="0x4AAAAAAEje-TIpg5UfwXRi" data-theme="dark" data-action="homepage-inquiry" data-refresh-expired="auto"></div>
-            </div>
             <button class="btn primary" type="submit">Richiedete un preventivo</button>
           </form><p class="note" style="margin-top:12px">Dopo la nostra risposta potrete inviare i file del logo e altri riferimenti via e-mail.</p></div>
     </div></section>
